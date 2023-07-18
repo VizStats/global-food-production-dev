@@ -1,0 +1,119 @@
+.dashboard {
+  width: 100%;
+}
+
+@media (min-width: 1440px) {
+  .body {
+    max-width: 1440px;
+    /* change logo to small */
+  }
+}
+
+.dashboard_layout {
+  display: grid;
+  grid-template-rows: 1fr 9fr;
+  grid-template-columns: 100%;
+}
+
+.main_dashboard {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+.main_child1 {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 1.5rem;
+}
+.main_child2 {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.main_children {
+  background: #fff;
+  border-radius: 10px;
+  border: 1px solid var(--grey, rgba(119, 108, 84, 0.1));
+  background: #fff;
+  box-shadow: 6px 6px 100px 0px rgba(200, 188, 176, 0.25),
+    2px 2px 2px 0px rgba(220, 181, 141, 0.1);
+}
+
+@media (max-width: 1149px) {
+  .dashboard_layout {
+    display: grid;
+    grid-template-rows: 1fr 25fr;
+    grid-template-columns: 100%;
+  }
+
+  .body {
+    padding: 0rem;
+  }
+
+  .dashboard_container {
+    margin-bottom: 3rem;
+    background: var(--background, #f4f3f1);
+    padding: 1rem;
+  }
+}
+
+@media (min-width: 1150px) {
+  .body {
+    padding: 2.5rem;
+  }
+
+  .dashboard_layout {
+    display: grid;
+    grid-template-rows: 1fr 25fr;
+    grid-template-columns: 100%;
+  }
+
+  .stroke_divider {
+    margin-left: 0.75rem;
+    margin-right: 0.75rem;
+    width: 2px;
+    height: 1.75rem;
+    background: rgba(119, 108, 84, 0.3);
+  }
+
+  .dashboard {
+    width: 100%;
+    border-radius: 18px;
+    background: var(--background, #f4f3f1);
+    box-shadow: 8px 8px 40px 0px rgba(153, 143, 133, 0.42),
+      4px 4px 6px 0px rgba(177, 144, 77, 0.06);
+  }
+}
+
+@media (min-width: 1200px) {
+  /* change logo to small */
+
+  .main_dashboard {
+    display: grid;
+    grid-template-columns: 7fr 3.3fr;
+    grid-template-areas: "main1 main2";
+    gap: 1.5rem;
+  }
+
+  .main_child1 {
+    display: grid;
+    grid-template-rows: 3fr 2.2fr;
+    gap: 1.5rem;
+  }
+  .main_child2 {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 1.5rem;
+  }
+
+  .main_children {
+    background: #fff;
+    border-radius: 10px;
+    border: 1px solid var(--grey, rgba(119, 108, 84, 0.1));
+    background: #fff;
+    box-shadow: 6px 6px 100px 0px rgba(200, 188, 176, 0.25),
+      2px 2px 2px 0px rgba(220, 181, 141, 0.1);
+  }
+}
