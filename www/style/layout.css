@@ -42,14 +42,14 @@
 }
 
 @media (max-width: 1149px) {
+  .body {
+    padding: 0rem;
+  }
+
   .dashboard_layout {
     display: grid;
     grid-template-rows: 1fr 25fr;
     grid-template-columns: 100%;
-  }
-
-  .body {
-    padding: 0rem;
   }
 
   .dashboard_container {
@@ -90,6 +90,12 @@
 @media (min-width: 1200px) {
   /* change logo to small */
 
+  .dashboard_layout {
+    display: grid;
+    grid-template-rows: 1fr 9fr;
+    grid-template-columns: 100%;
+  }
+
   .main_dashboard {
     display: grid;
     grid-template-columns: 7fr 3.3fr;
@@ -102,6 +108,7 @@
     grid-template-rows: 3fr 2.2fr;
     gap: 1.5rem;
   }
+
   .main_child2 {
     display: grid;
     grid-template-rows: 1fr 1fr;
